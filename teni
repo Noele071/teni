@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Girlfriend?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            padding: 30px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+
+        .video-container {
+            margin: 20px 0;
+        }
+
+        video {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #fff;
+            color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff9a9e;
+        }
+
+        .rose {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>For months now I’ve been meaning to say this: you have absolutely captivated me. Every time I see you, my heart skips a beat, and I can’t help but smile
+        You bring such a spark into my life, and I’d love the chance to explore this connection between us.</p>
+
+        <h1>Omotolani Teniola Agboola</h1>
+        <p>Will you be my girlfriend?</p>
+        <div class="video-container">
+            <video controls>
+                <source src="https://imgur.com/a/9HD8Utx" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button onclick="showPopup()">Yes, I will!</button>
+    </div>
+
+    <img src="https://example.com/rose.png" alt="Roses" class="rose" style="top: 10%; left: 10%; width: 150px;">
+    <img src="https://example.com/rose.png" alt="Roses" class="rose" style="top: 70%; right: 10%; width: 150px;">
+
+    <script>
+        function showPopup() {
+            alert('Yay! I’m so happy you said yes!');
+        }
+    </script>
+</body>
+</html>
